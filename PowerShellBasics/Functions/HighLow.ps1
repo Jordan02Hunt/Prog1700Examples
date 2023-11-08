@@ -3,6 +3,9 @@ Function Get-HighLowAnswer {
     Get-random -Minimum 1 -Maximum 10
 }
 function Start-HighLowGame{
+    param (
+        [int]$answer
+    )
     do{
         #Ask the user to make a guess
         $guess = Read-Host "Guess a number Between 1-10"
@@ -23,5 +26,5 @@ function Start-HighLowGame{
         }
         }until ($guess -eq $answer)
 }
-$answer = Get-HighLowAnswer
-Start-HighLowGame
+$RandomNumber = Get-HighLowAnswer
+Start-HighLowGame -answer $RandomNumber

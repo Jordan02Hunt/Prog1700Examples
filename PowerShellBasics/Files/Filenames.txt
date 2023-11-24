@@ -1,0 +1,9 @@
+Crappydb
+CrappyDB.PS1
+Emojis.PS1
+Filenames.txt
+Files.ipynb
+NotTemp.txt
+Out.txt
+Temp
+Test.txt
